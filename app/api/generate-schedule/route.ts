@@ -20,7 +20,6 @@ function isRateLimited(ip: string): boolean {
 }
 
 // Helper to count morning sub-slots vs evening sub-slots
-// Morning sub-slots end in 11, 12, 13 e.g. A11, B11, C11, D11, E11, F11, A12, B12, C12, D12, E12, F12, A13, B13, C13, D13, E13, F13
 function getSlotTimeStats(slotStr: string) {
   if (!slotStr) return { morningCount: 0, eveningCount: 0 };
   const subSlots = slotStr.split('+').map(s => s.trim());
@@ -28,7 +27,6 @@ function getSlotTimeStats(slotStr: string) {
   let eveningCount = 0;
 
   subSlots.forEach(s => {
-    // Check if slot ends in 11, 12, 13 (Morning 08:30 - 13:10)
     if (/^[A-F](11|12|13)$/.test(s)) {
       morningCount++;
     } else {
@@ -53,10 +51,10 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { selectedCourses, timePreference, prioritizeHighRating, mealBreaks } = body;
 
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = (process.env.GEMINI_API_KEY || '').trim();
     if (!apiKey) {
       return NextResponse.json(
-        { error: 'Gemini API Key is missing in environment variables.' },
+        { error: 'Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.' },
         { status: 500 }
       );
     }
@@ -67,25 +65,21 @@ export async function POST(req: NextRequest) {
         const statsA = getSlotTimeStats(a.slot);
         const statsB = getSlotTimeStats(b.slot);
 
-        // Special rule for MAT1031: prioritize DHARMALINGAM M over DONDU HARISH BABU
         if (c.courseCode === "MAT1031") {
           if (a.teacherName.includes("DHARMALINGAM") && !b.teacherName.includes("DHARMALINGAM")) return -1;
           if (!a.teacherName.includes("DHARMALINGAM") && b.teacherName.includes("DHARMALINGAM")) return 1;
         }
 
         if (timePreference === 'morning') {
-          // Sort primarily by morning slots count, then by rating
           if (statsB.morningCount !== statsA.morningCount) {
             return statsB.morningCount - statsA.morningCount;
           }
         } else if (timePreference === 'evening') {
-          // Sort primarily by evening slots count, then by rating
           if (statsB.eveningCount !== statsA.eveningCount) {
             return statsB.eveningCount - statsA.eveningCount;
           }
         }
 
-        // Secondary tie-breaker: rating
         return (b.rating || -1) - (a.rating || -1);
       });
 
@@ -155,17 +149,31 @@ Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error("Gemini API Error:", errText);
-      return NextResponse.json({ error: `Gemini API returned error status ${response.status}` }, { status: response.status });
+      console.error("Gemini API Error Response:", errText);
+      return NextResponse.json(
+        { error: `Gemini API Key error (${response.status}). Please verify GEMINI_API_KEY environment variable in your Vercel deployment settings.` },
+        { status: response.status }
+      );
     }
 
     const data = await response.json();
     const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
-    
-    const cleanJson = rawText.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    const scheduleResult = JSON.parse(cleanJson);
 
-    return NextResponse.json({ schedule: scheduleResult });
+    // Robust JSON Array extraction using Regex
+    const jsonMatch = rawText.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) {
+      console.error("No JSON array found in Gemini response:", rawText);
+      return NextResponse.json({ error: "Gemini AI returned a non-JSON response. Please try generating again." }, { status: 500 });
+    }
+
+    try {
+      const scheduleResult = JSON.parse(jsonMatch[0]);
+      return NextResponse.json({ schedule: scheduleResult });
+    } catch (parseError: any) {
+      console.error("JSON parse error:", parseError, "Raw output:", rawText);
+      return NextResponse.json({ error: "Failed to parse schedule JSON from Gemini response. Please try again." }, { status: 500 });
+    }
+
   } catch (error: any) {
     console.error("Failed to generate AI schedule:", error);
     return NextResponse.json({ error: error.message || 'Internal Server Error' }, { status: 500 });

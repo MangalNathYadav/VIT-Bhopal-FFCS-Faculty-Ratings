@@ -32,10 +32,10 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { currentSchedule, refinementPrompt, allFacultyData } = body;
 
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = (process.env.GEMINI_API_KEY || '').trim();
     if (!apiKey) {
       return NextResponse.json(
-        { error: 'Gemini API Key is missing in environment variables.' },
+        { error: 'Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.' },
         { status: 500 }
       );
     }
@@ -96,17 +96,31 @@ Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error("Gemini API Error:", errText);
-      return NextResponse.json({ error: `Gemini API returned error status ${response.status}` }, { status: response.status });
+      console.error("Gemini API Error Response:", errText);
+      return NextResponse.json(
+        { error: `Gemini API Key error (${response.status}). Please verify GEMINI_API_KEY environment variable in your Vercel deployment settings.` },
+        { status: response.status }
+      );
     }
 
     const data = await response.json();
     const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
-    
-    const cleanJson = rawText.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    const updatedSchedule = JSON.parse(cleanJson);
 
-    return NextResponse.json({ schedule: updatedSchedule });
+    // Robust JSON Array extraction using Regex
+    const jsonMatch = rawText.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) {
+      console.error("No JSON array found in Gemini response:", rawText);
+      return NextResponse.json({ error: "Gemini AI returned a non-JSON response. Please try refining again." }, { status: 500 });
+    }
+
+    try {
+      const updatedSchedule = JSON.parse(jsonMatch[0]);
+      return NextResponse.json({ schedule: updatedSchedule });
+    } catch (parseError: any) {
+      console.error("JSON parse error:", parseError, "Raw output:", rawText);
+      return NextResponse.json({ error: "Failed to parse schedule JSON from Gemini response. Please try again." }, { status: 500 });
+    }
+
   } catch (error: any) {
     console.error("Failed to refine schedule:", error);
     return NextResponse.json({ error: error.message || 'Internal Server Error' }, { status: 500 });
