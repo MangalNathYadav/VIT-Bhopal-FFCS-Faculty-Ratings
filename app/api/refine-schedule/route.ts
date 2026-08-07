@@ -77,7 +77,7 @@ Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 `;
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`,
       {
         method: 'POST',
         headers: {

@@ -68,7 +68,7 @@ export async function POST(req: NextRequest) {
     const apiKey = (process.env.GEMINI_API_KEY || '').trim();
     if (!apiKey) {
       return NextResponse.json(
-        { error: 'Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your Vercel deployment settings.' },
+        { error: 'Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.' },
         { status: 500 }
       );
     }
@@ -153,9 +153,9 @@ Return strictly a raw JSON array of objects representing the chosen schedule opt
 Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 `;
 
-    // 4. Call Gemini REST API (Using gemini-1.5-flash for reliability and higher quotas)
+    // 4. Call Gemini REST API (gemini-flash-latest)
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`,
       {
         method: 'POST',
         headers: {
