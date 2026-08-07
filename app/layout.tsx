@@ -16,9 +16,30 @@ export const metadata: Metadata = {
   title: "VIT Bhopal FFCS & Faculty Ratings | AI Timetable Maker",
   description: "Plan 100% clash-free semester timetables with Gemini AI, faculty ratings, and local storage privacy.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.png",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "VIT Bhopal FFCS & Faculty Ratings | AI Timetable Maker",
+    description: "Plan 100% clash-free semester timetables with Gemini AI, faculty ratings, and local storage privacy.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 512,
+        height: 512,
+        alt: "VIT Bhopal FFCS AI Timetable Maker Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "VIT Bhopal FFCS & Faculty Ratings | AI Timetable Maker",
+    description: "Plan 100% clash-free semester timetables with Gemini AI, faculty ratings, and local storage privacy.",
+    images: ["/og-image.png"],
   },
 };
 
