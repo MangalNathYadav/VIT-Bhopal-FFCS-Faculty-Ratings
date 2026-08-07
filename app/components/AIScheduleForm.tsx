@@ -60,6 +60,9 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
       return;
     }
 
+    // Instantly reset schedule state when user clicks Regenerate
+    onScheduleGenerated([]);
+
     setLoading(true);
     setError(null);
 

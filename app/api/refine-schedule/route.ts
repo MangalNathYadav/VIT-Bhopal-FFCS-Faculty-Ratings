@@ -77,7 +77,7 @@ Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 `;
 
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent`,
       {
         method: 'POST',
         headers: {
@@ -97,8 +97,14 @@ Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
     if (!response.ok) {
       const errText = await response.text();
       console.error("Gemini API Error Response:", errText);
+      if (response.status === 429) {
+        return NextResponse.json(
+          { error: 'Google Gemini API Rate Limit / Quota Exceeded (HTTP 429). The free Gemini API key limit was reached. Please wait 20-30 seconds and try again.' },
+          { status: 429 }
+        );
+      }
       return NextResponse.json(
-        { error: `Gemini API Key error (${response.status}). Please verify GEMINI_API_KEY environment variable in your Vercel deployment settings.` },
+        { error: `Gemini API returned error (${response.status}): ${errText.substring(0, 150)}` },
         { status: response.status }
       );
     }
