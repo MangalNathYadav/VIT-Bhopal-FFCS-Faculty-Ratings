@@ -96,7 +96,15 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
         })
       });
 
-      const json = await res.json();
+      let json: any;
+      const contentType = res.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        json = await res.json();
+      } else {
+        const errHtml = await res.text();
+        console.error("Non-JSON Server response:", errHtml);
+        throw new Error(`Server Error (${res.status}). Google Gemini API or server returned an unexpected error page.`);
+      }
 
       if (!res.ok) {
         throw new Error(json.error || "Failed to generate schedule.");
