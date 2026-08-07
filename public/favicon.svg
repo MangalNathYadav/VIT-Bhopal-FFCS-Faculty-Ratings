@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#4f46e5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Shield/Badge -->
+  <rect x="5" y="5" width="90" height="90" rx="24" fill="url(#grad)" filter="url(#shadow)"/>
+
+  <!-- Graduation Cap Icon -->
+  <path d="M50 25 L82 39 L50 53 L18 39 Z" fill="#ffffff" />
+  <path d="M28 44.5 V60 C28 67 38 72 50 72 C62 72 72 67 72 60 V44.5" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M78 40.5 V58" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <circle cx="78" cy="61" r="3.5" fill="#ffffff" />
+</svg>

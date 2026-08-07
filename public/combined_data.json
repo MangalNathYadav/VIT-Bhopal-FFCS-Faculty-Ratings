@@ -1,0 +1,4145 @@
+[
+  {
+    "name": "AJAY KUMAR PHULRE",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-217",
+        "availableSeats": 63
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-217"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "BENEVATHO JAISON A",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-416",
+        "availableSeats": 44
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-416"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "G. VISHNUVARTHANAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-501",
+        "availableSeats": 48
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-501"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "KIRAN KUMAR BEHERA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-513",
+        "availableSeats": 45
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-513"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "RAJIT NAIR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB02-205",
+        "availableSeats": 73
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB02-205"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SASMITA PADHY",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-217",
+        "availableSeats": 53
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-217"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "VIPIN KUMAR MISHRA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A11+A12",
+        "venue": "AB-520",
+        "availableSeats": 50
+      }
+    ],
+    "slots": [
+      "A11+A12"
+    ],
+    "venues": [
+      "AB-520"
+    ],
+    "rating": 5.0,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SAURAV PRASAD",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-518",
+        "availableSeats": 58
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "E11+E12",
+        "venue": "AB-530",
+        "availableSeats": 20
+      }
+    ],
+    "slots": [
+      "D21+D22",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-518",
+      "AB-530"
+    ],
+    "rating": 4.833333333333333,
+    "reviews": {
+      "Teaching": "4.333333333333333",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ARINDAM GHOSH",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B11+B12",
+        "venue": "AB-520",
+        "availableSeats": 18
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B21+E22",
+        "venue": "AB-530",
+        "availableSeats": 49
+      }
+    ],
+    "slots": [
+      "B11+B12",
+      "B21+E22"
+    ],
+    "venues": [
+      "AB-520",
+      "AB-530"
+    ],
+    "rating": 4.8,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "4.3",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ANJALI MATHUR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-221",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-221"
+    ],
+    "rating": 4.75,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "JAGRITI GUPTA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "C11+C12",
+        "venue": "AB-530",
+        "availableSeats": 50
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D11+D12",
+        "venue": "AB-515",
+        "availableSeats": 58
+      }
+    ],
+    "slots": [
+      "C11+C12",
+      "D11+D12"
+    ],
+    "venues": [
+      "AB-530",
+      "AB-515"
+    ],
+    "rating": 4.75,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "TAUSEEF QAMAR",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B14+F14",
+        "venue": "AB-024",
+        "availableSeats": 64
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B21+E22",
+        "venue": "AB-503",
+        "availableSeats": 50
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "C11+C12",
+        "venue": "AB-417",
+        "availableSeats": 59
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "F11+F12",
+        "venue": "AB-529",
+        "availableSeats": 59
+      }
+    ],
+    "slots": [
+      "B14+F14",
+      "B21+E22",
+      "C11+C12",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-024",
+      "AB-503",
+      "AB-417",
+      "AB-529"
+    ],
+    "rating": 4.75,
+    "reviews": {
+      "Teaching": "4.8",
+      "Evaluation": "4.8",
+      "Behaviour": "4.8",
+      "Internals": "4.6",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "DIP MUKHERJEE",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-431",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-431"
+    ],
+    "rating": 4.6875,
+    "reviews": {
+      "Teaching": "4.5",
+      "Evaluation": "4.5",
+      "Behaviour": "5.0",
+      "Internals": "4.75",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "AJEET SINGH",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-219",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-219"
+    ],
+    "rating": 4.625,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "5.0",
+      "Behaviour": "4.5",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "AKSHARA MAKRARIYA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-420",
+        "availableSeats": 64
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-420"
+    ],
+    "rating": 4.625,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "4.5",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ANITA YADAV",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-419",
+        "availableSeats": 59
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-429",
+        "availableSeats": 51
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "E11+E12",
+        "venue": "AB-007",
+        "availableSeats": 57
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A21+A22",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-419",
+      "AB-429",
+      "AB-007"
+    ],
+    "rating": 4.625,
+    "reviews": {
+      "Teaching": "4.5",
+      "Evaluation": "5.0",
+      "Behaviour": "4.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "JUHI KESARWANI",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-513",
+        "availableSeats": 0
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-513"
+    ],
+    "rating": 4.625,
+    "reviews": {
+      "Teaching": "4.5",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ABHA SHARMA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-220",
+        "availableSeats": 46
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-220"
+    ],
+    "rating": 4.5,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "GEETANJALI GIRI",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A11+A12",
+        "venue": "AB-529",
+        "availableSeats": 52
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-429",
+        "availableSeats": 44
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A23+B14"
+    ],
+    "venues": [
+      "AB-529",
+      "AB-429"
+    ],
+    "rating": 4.5,
+    "reviews": {
+      "Teaching": "4.5",
+      "Evaluation": "4.5",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "PRIYANKA ROY",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-502",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-502"
+    ],
+    "rating": 4.5,
+    "reviews": {
+      "Teaching": "4.5",
+      "Evaluation": "4.5",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SOUMYA SANKAR GHOSH",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B11+B12",
+        "venue": "AB-531",
+        "availableSeats": 19
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-429",
+        "availableSeats": 64
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "E11+E12",
+        "venue": "AB-024",
+        "availableSeats": 46
+      }
+    ],
+    "slots": [
+      "B11+B12",
+      "D21+D22",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-531",
+      "AB-429",
+      "AB-024"
+    ],
+    "rating": 4.5,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "5.0",
+      "Behaviour": "4.0",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "GUNJAN ANSARI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-222",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-222"
+    ],
+    "rating": 4.4,
+    "reviews": {
+      "Teaching": "4.6",
+      "Evaluation": "4.6",
+      "Behaviour": "5.0",
+      "Internals": "3.3",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "KUMAR ABHISHEK",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-517",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-517"
+    ],
+    "rating": 4.375,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.75",
+      "Behaviour": "4.75",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "PRISCILLA DINKAR MOYYA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-221",
+        "availableSeats": 74
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-221"
+    ],
+    "rating": 4.3,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.666666666666667",
+      "Behaviour": "4.333333333333333",
+      "Internals": "4.333333333333333",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "PALAS MANDAL",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-501",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-501"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "5",
+      "Evaluation": "4",
+      "Behaviour": "5",
+      "Internals": "3",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "RAJEEV SAXENA",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B11+B12",
+        "venue": "AB-024",
+        "availableSeats": 40
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-419",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-023",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B11+B12",
+      "D11+D12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-024",
+      "AB-419",
+      "AB-023"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "3.65",
+      "Behaviour": "4.6",
+      "Internals": "3.6",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SANTOSH KUMAR BHAL",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-429",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-429"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "4.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SATYAM RAVI",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A13+A14",
+        "venue": "AB-529",
+        "availableSeats": 60
+      }
+    ],
+    "slots": [
+      "A13+A14"
+    ],
+    "venues": [
+      "AB-529"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SAURABH MISHRA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A11+A12",
+        "venue": "AB-515",
+        "availableSeats": 41
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-519",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-515",
+      "AB-519"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "SONJOY PAN",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-518",
+        "availableSeats": 62
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-518"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.5",
+      "Behaviour": "5.0",
+      "Internals": "3.5",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "NIYAZ AHMED L",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-518",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-518"
+    ],
+    "rating": 4.16,
+    "reviews": {
+      "Teaching": "4.6",
+      "Evaluation": "4.3",
+      "Behaviour": "3.6",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "PIJUSH KANTI MONDAL",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A24+F22",
+        "venue": "AB-023",
+        "availableSeats": 63
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "F11+F12",
+        "venue": "AB-531",
+        "availableSeats": 61
+      }
+    ],
+    "slots": [
+      "A24+F22",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-023",
+      "AB-531"
+    ],
+    "rating": 4.125,
+    "reviews": {
+      "Teaching": "2.5",
+      "Evaluation": "4.5",
+      "Behaviour": "4.5",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ABHA TRIVEDI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-204",
+        "availableSeats": 32
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-204"
+    ],
+    "rating": 4.0625,
+    "reviews": {
+      "Teaching": "4.25",
+      "Evaluation": "3.75",
+      "Behaviour": "4.25",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "MANISHA JAIN",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-519",
+        "availableSeats": 38
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-519"
+    ],
+    "rating": 4.0625,
+    "reviews": {
+      "Teaching": "3.75",
+      "Evaluation": "4.0",
+      "Behaviour": "4.25",
+      "Internals": "4.25",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "RUDRA KALYAN NAYAK",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-217",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-217"
+    ],
+    "rating": 4.0625,
+    "reviews": {
+      "Teaching": "4.25",
+      "Evaluation": "4.25",
+      "Behaviour": "3.75",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ABHINAV KUMAR",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-518",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-519",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A24+F22",
+        "venue": "AB-025",
+        "availableSeats": 66
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B11+B12",
+        "venue": "AB-530",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A23+B14",
+      "A24+F22",
+      "B11+B12"
+    ],
+    "venues": [
+      "AB-518",
+      "AB-519",
+      "AB-025",
+      "AB-530"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "ASHOK KUMAR BARAL",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-520",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-520"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "DEV BRAT GUPTA",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-530",
+        "availableSeats": 53
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-520",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-520",
+        "availableSeats": 67
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "F11+F12",
+        "venue": "AB-025",
+        "availableSeats": 59
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A21+A22",
+      "D11+D12",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-530",
+      "AB-520",
+      "AB-025"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "4.25",
+      "Evaluation": "4.0",
+      "Behaviour": "3.5",
+      "Internals": "4.25",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SHWETA MUKHERJEE",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A21+A22",
+        "venue": "AB-024",
+        "availableSeats": 13
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D11+D12",
+        "venue": "AB-024",
+        "availableSeats": 56
+      }
+    ],
+    "slots": [
+      "A21+A22",
+      "D11+D12"
+    ],
+    "venues": [
+      "AB-024"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "VELMURUGAN L",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-221",
+        "availableSeats": 73
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-221"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "VINOD KUMAR JATAV",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-507",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-507"
+    ],
+    "rating": 4.0,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.6",
+      "Behaviour": "4.0",
+      "Internals": "4.3",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SUGAVANESHWAR R P",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B11+B12",
+        "venue": "AB-025",
+        "availableSeats": 66
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "E11+E12",
+        "venue": "AB-025",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B11+B12",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-025"
+    ],
+    "rating": 3.9975,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "4.33",
+      "Behaviour": "4.33",
+      "Internals": "4.33",
+      "Class Average": "Low",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "DEVARAJU S",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-216",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-216"
+    ],
+    "rating": 3.875,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "4.5",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "ANKIT PAL",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-431",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-431"
+    ],
+    "rating": 3.8,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "4.0",
+      "Internals": "4.25",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "DHERESH SONI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-218",
+        "availableSeats": 58
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-218"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "2.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "HARISH CHANDRA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-502",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-502"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "3.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "JITENDRA PRATAP SINGH MATHUR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-219",
+        "availableSeats": 64
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-219"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "5.0",
+      "Evaluation": "5.0",
+      "Behaviour": "5.0",
+      "Internals": "0.0",
+      "Class Average": "",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "MURUGESWARI K",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB02-204",
+        "availableSeats": 74
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB02-204"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "4.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "POONKUNTRAN S",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-204",
+        "availableSeats": 76
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-204"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "5.0",
+      "Behaviour": "1",
+      "Internals": "5.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "RAMRAJ DANGI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-220",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-220"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SHEERIN KAYENAT",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-502",
+        "availableSeats": 63
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-502"
+    ],
+    "rating": 3.75,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "JUHI YASMEEN",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-417",
+        "availableSeats": 33
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B11+B12",
+        "venue": "AB-418",
+        "availableSeats": 49
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-530",
+        "availableSeats": 58
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "E11+E12",
+        "venue": "AB-520",
+        "availableSeats": 63
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "B11+B12",
+      "D11+D12",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-417",
+      "AB-418",
+      "AB-530",
+      "AB-520"
+    ],
+    "rating": 3.625,
+    "reviews": {
+      "Teaching": "3.25",
+      "Evaluation": "3.75",
+      "Behaviour": "4.25",
+      "Internals": "3.25",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SAURABH BHARGAVA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A21+A22",
+        "venue": "AB-517",
+        "availableSeats": 66
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D11+D12",
+        "venue": "AB-420",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A21+A22",
+      "D11+D12"
+    ],
+    "venues": [
+      "AB-517",
+      "AB-420"
+    ],
+    "rating": 3.625,
+    "reviews": {
+      "Teaching": "3.5",
+      "Evaluation": "4.5",
+      "Behaviour": "3.0",
+      "Internals": "3.5",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "VINOD BHATT",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-025",
+        "availableSeats": 56
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "C11+C12",
+        "venue": "AB-025",
+        "availableSeats": 51
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-025",
+        "availableSeats": 60
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "C11+C12",
+      "D11+D12"
+    ],
+    "venues": [
+      "AB-025"
+    ],
+    "rating": 3.625,
+    "reviews": {
+      "Teaching": "3.5",
+      "Evaluation": "4.0",
+      "Behaviour": "3.25",
+      "Internals": "3.75",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "ASHFAQ AHMAD NAJAR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-219",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-219"
+    ],
+    "rating": 3.5,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "3.0",
+      "Behaviour": "5.0",
+      "Internals": "4.0",
+      "Class Average": "Low",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "PRADEEP KUMAR MISHRA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-218",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-218"
+    ],
+    "rating": 3.5,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "3.6",
+      "Behaviour": "3.0",
+      "Internals": "4.6",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "PRASHANT KUMAR PANDEY",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-507",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-507"
+    ],
+    "rating": 3.5,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "4.0",
+      "Behaviour": "3.0",
+      "Internals": "3.0",
+      "Class Average": "Low",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "PREETAM SUMAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-217",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-217"
+    ],
+    "rating": 3.5,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "2.0",
+      "Internals": "5.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SIDDHARTH SINGH CHOUHAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-218",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-218"
+    ],
+    "rating": 3.375,
+    "reviews": {
+      "Teaching": "2.75",
+      "Evaluation": "3.0",
+      "Behaviour": "4.25",
+      "Internals": "3.5",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "SANDIP MAL",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-419",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-419"
+    ],
+    "rating": 3.37,
+    "reviews": {
+      "Teaching": "4",
+      "Evaluation": "3",
+      "Behaviour": "2.5",
+      "Internals": "4",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "CHANDAN KUMAR BEHERA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-420",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-420"
+    ],
+    "rating": 3.25,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "3.0",
+      "Behaviour": "3.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "DIPANKAR SUTRADHAR",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "F11+F12",
+        "venue": "AB-530",
+        "availableSeats": 51
+      }
+    ],
+    "slots": [
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-530"
+    ],
+    "rating": 3.25,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "4.0",
+      "Behaviour": "3.0",
+      "Internals": "4.0",
+      "Class Average": "High",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "DONDU HARISH BABU",
+    "courses": [
+      {
+        "courseCode": "MAT1031",
+        "courseName": "Introduction to Calculus (BHI)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-429",
+        "availableSeats": null
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-429"
+    ],
+    "rating": 3.25,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "2.0",
+      "Behaviour": "4.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "KOMARASAMY G",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-205",
+        "availableSeats": 78
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-205"
+    ],
+    "rating": 3.25,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "4.0",
+      "Internals": "2.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "PAVAN KUMAR",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-416",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-416"
+    ],
+    "rating": 3.25,
+    "reviews": {
+      "Teaching": "4.0",
+      "Evaluation": "3.0",
+      "Behaviour": "3.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "MAYANK SHARMA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-431",
+        "availableSeats": 57
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-431"
+    ],
+    "rating": 3.125,
+    "reviews": {
+      "Teaching": "2.5",
+      "Evaluation": "3.5",
+      "Behaviour": "2.5",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "ADARSH PATEL",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-219",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-219"
+    ],
+    "rating": 3,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "2.5",
+      "Behaviour": "4.0",
+      "Internals": "2.5",
+      "Class Average": "Medium",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
+  },
+  {
+    "name": "BHUMIKA CHOKSI",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-419",
+        "availableSeats": 61
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-419"
+    ],
+    "rating": 3.0,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "2.0",
+      "Behaviour": "3.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "J. MANIKANDAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-429",
+        "availableSeats": 0
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-429"
+    ],
+    "rating": 3.0,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "3.0",
+      "Behaviour": "3.0",
+      "Internals": "3.0",
+      "Class Average": "Low",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "MOHD RAFI LONE",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB02-216",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB02-216"
+    ],
+    "rating": 3.0,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "3.0",
+      "Behaviour": "3.0",
+      "Internals": "4.0",
+      "Class Average": "Medium",
+      "Final Remark": "Moderately Recommended"
+    }
+  },
+  {
+    "name": "ABDUR RAHMAN M S",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A13+A14",
+        "venue": "AB-515",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-417",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-417",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "E11+E12",
+        "venue": "AB-417",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A13+A14",
+      "A21+A22",
+      "D21+D22",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-515",
+      "AB-417"
+    ],
+    "rating": 2.9125,
+    "reviews": {
+      "Teaching": "2.66",
+      "Evaluation": "2.33",
+      "Behaviour": "3.66",
+      "Internals": "3.0",
+      "Class Average": "High",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "ENAGANDULA PRASAD",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-507",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-507"
+    ],
+    "rating": 2.8125,
+    "reviews": {
+      "Teaching": "3.25",
+      "Evaluation": "2.25",
+      "Behaviour": "2.5",
+      "Internals": "3.25",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "P. VAYUNANDANAKISHORE",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A21+A22",
+        "venue": "AB-518",
+        "availableSeats": 63
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B21+E22",
+        "venue": "AB-531",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "A21+A22",
+      "B21+E22"
+    ],
+    "venues": [
+      "AB-518",
+      "AB-531"
+    ],
+    "rating": 2.75,
+    "reviews": {
+      "Teaching": "2.5",
+      "Evaluation": "2.5",
+      "Behaviour": "3.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "RAJDEEP SINGH PAYAL",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-024",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-024"
+    ],
+    "rating": 2.75,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "2.0",
+      "Behaviour": "4.0",
+      "Internals": "2.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "Pradeep Kumar Kayshap",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D11+D12",
+        "venue": "AB-531",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "D11+D12"
+    ],
+    "venues": [
+      "AB-531"
+    ],
+    "rating": 2.6,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "2.0",
+      "Behaviour": "3.0",
+      "Internals": "2.5",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "A. SIRAJUDEEN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-430",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-430"
+    ],
+    "rating": 2.5,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "3.0",
+      "Behaviour": "3.0",
+      "Internals": "3.0",
+      "Class Average": "High",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "ASHOK PATEL",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-025",
+        "availableSeats": 76
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-025"
+    ],
+    "rating": 2.5,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "4.0",
+      "Behaviour": "1.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "SIVABALAN KR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-218",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-218"
+    ],
+    "rating": 2.5,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "1.0",
+      "Behaviour": "4.0",
+      "Internals": "4.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "NAVNEET KUMAR VERMA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-431",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-431"
+    ],
+    "rating": 2.25,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "1.0",
+      "Behaviour": "4.0",
+      "Internals": "2.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "CHANDRAMA SWAIN",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-531",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-529",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B11+B12",
+        "venue": "AB-417",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-529",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-517",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A21+A22",
+      "B11+B12",
+      "D11+D12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-531",
+      "AB-529",
+      "AB-417",
+      "AB-517"
+    ],
+    "rating": 2.1,
+    "reviews": {
+      "Teaching": "2.5",
+      "Evaluation": "2.0",
+      "Behaviour": "2.1",
+      "Internals": "1.8",
+      "Class Average": "Medium",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "HARIHARASITARAMAN S",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-024",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-024"
+    ],
+    "rating": 1.75,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "2.0",
+      "Behaviour": "2.0",
+      "Internals": "1.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "KANNAN S",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-517",
+        "availableSeats": 26
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-517"
+    ],
+    "rating": 1.75,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "2.0",
+      "Behaviour": "1.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "ADNAN ABBASI",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-501",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-501"
+    ],
+    "rating": 1.5,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "1.0",
+      "Behaviour": "1.0",
+      "Internals": "3.0",
+      "Class Average": "Medium",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "SHARAD CHANDRA TRIPATHI",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A21+A22",
+        "venue": "AB-023",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A21+A22"
+    ],
+    "venues": [
+      "AB-023"
+    ],
+    "rating": 1.5,
+    "reviews": {
+      "Teaching": "2.0",
+      "Evaluation": "1.0",
+      "Behaviour": "1.0",
+      "Internals": "2.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "NILAM VENKATAKOTESWARARAO",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-502",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-502"
+    ],
+    "rating": 1.3,
+    "reviews": {
+      "Teaching": "1.6",
+      "Evaluation": "1.3",
+      "Behaviour": "1.0",
+      "Internals": "1.3",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "HEMANT KUMAR NASHINE",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-023",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-023"
+    ],
+    "rating": 1.25,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "1.0",
+      "Behaviour": "2.0",
+      "Internals": "1.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "ANIL KUMAR SHUKLA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-529",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-529"
+    ],
+    "rating": 1.0,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "1.0",
+      "Behaviour": "1.0",
+      "Internals": "1.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "SUCHISMITA PATRA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-420",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-420"
+    ],
+    "rating": 1.0,
+    "reviews": {
+      "Teaching": "1.0",
+      "Evaluation": "1.0",
+      "Behaviour": "1.0",
+      "Internals": "1.0",
+      "Class Average": "Low",
+      "Final Remark": "Might not suit everyone\ud83e\udd14"
+    }
+  },
+  {
+    "name": "A.V.R MAYURI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-216",
+        "availableSeats": 47
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-216"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "ABHISHEKH",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-513",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-513"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "ANJU SHUKLA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-222",
+        "availableSeats": 58
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-222"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "ANKIT FARKYA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-416",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-416"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "ANUPAM SEN",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-514",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-514"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "ASHISH KUMAR KESARWANY",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-513",
+        "availableSeats": 63
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-513"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "BALAJI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-517",
+        "availableSeats": 63
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-517"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "CHAYAN PANDYA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B23+E14",
+        "venue": "AB-520",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "C11+C12",
+        "venue": "AB-531",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B23+E14",
+      "C11+C12"
+    ],
+    "venues": [
+      "AB-520",
+      "AB-531"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "CHAYAN PAUL",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB02-218",
+        "availableSeats": 73
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB02-218"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "CLEMENT JOHNSON R",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-419",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-419"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "D. LAKSHMI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-204",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-204"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DEBRAJ GOGOI",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-530",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B14+F14",
+        "venue": "AB-530",
+        "availableSeats": 62
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B21+E22",
+        "venue": "AB-529",
+        "availableSeats": 64
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B24+F21",
+        "venue": "AB-024",
+        "availableSeats": 57
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "F11+F12",
+        "venue": "AB-418",
+        "availableSeats": 6
+      }
+    ],
+    "slots": [
+      "A21+A22",
+      "B14+F14",
+      "B21+E22",
+      "B24+F21",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-530",
+      "AB-529",
+      "AB-024",
+      "AB-418"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DEVANAND",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-518",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-518"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DHARMALINGAM M",
+    "courses": [
+      {
+        "courseCode": "MAT1031",
+        "courseName": "Introduction to Calculus (BHI)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-514",
+        "availableSeats": null
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-514"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DILEEP KUMAR",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-519",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-519"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DISHA KUNDU",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A13+A14",
+        "venue": "AB-420",
+        "availableSeats": 62
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A23+B14",
+        "venue": "AB-517",
+        "availableSeats": 52
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-529",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A13+A14",
+      "A23+B14",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-420",
+      "AB-517",
+      "AB-529"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "DSS",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-222",
+        "availableSeats": 75
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-222"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "E. NIRMALA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB02-205",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB02-205"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "FSDF",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-223",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-223"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "G.PRABU KANNA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-429",
+        "availableSeats": 51
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-429"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "GARGI ROY",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A11+A12",
+        "venue": "AB-418",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-418",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-418",
+        "availableSeats": 66
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "E11+E12",
+        "venue": "AB-418",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A21+A22",
+      "D21+D22",
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-418"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "GIRIJA P",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-430",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-430"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "GOBINDA GHOSH",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-503",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-503"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "HIMANSHI HARISH SHARMA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A11+A12",
+        "venue": "AB-024",
+        "availableSeats": 48
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A13+A14",
+        "venue": "AB-024",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "A13+A14"
+    ],
+    "venues": [
+      "AB-024"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "I. JASMINE SELVAKUMARI JEYA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-501",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-501"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "JAYACHANDIRAN J",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A24+F22",
+        "venue": "AB-419",
+        "availableSeats": 64
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "C14+C21",
+        "venue": "AB-024",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A24+F22",
+      "C14+C21"
+    ],
+    "venues": [
+      "AB-419",
+      "AB-024"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "K. RANGARAJAN",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-413",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-413"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "KANNAIYA RAJA N",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-221",
+        "availableSeats": 74
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-221"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "M. AZHAGURAJAN",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-418",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A24+F22",
+        "venue": "AB-024",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A23+B14",
+      "A24+F22"
+    ],
+    "venues": [
+      "AB-418",
+      "AB-024"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "M. PRIYAKUMARAN",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B14+F14",
+        "venue": "AB-529",
+        "availableSeats": 54
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B21+E22",
+        "venue": "AB-520",
+        "availableSeats": 66
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B24+F21",
+        "venue": "AB-023",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "C11+C12",
+        "venue": "AB-418",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "F11+F12",
+        "venue": "AB-417",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "B14+F14",
+      "B21+E22",
+      "B24+F21",
+      "C11+C12",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-529",
+      "AB-520",
+      "AB-023",
+      "AB-418",
+      "AB-417"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "M.K. JAYANTHI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB02-217",
+        "availableSeats": 64
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB02-217"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "MANOJ KUMAR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-216",
+        "availableSeats": 74
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-216"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "MUNIYAPPAN M",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-514",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-514"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "NELLAIAPPAN S",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-023",
+        "availableSeats": 73
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "C11+C12",
+        "venue": "AB-529",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "A23+B14",
+      "C11+C12"
+    ],
+    "venues": [
+      "AB-023",
+      "AB-529"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "NFSASL-MAT4",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-517",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-430",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22",
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-517",
+      "AB-430"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "NFSASL-MAT5",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-519",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "C11+C12+C13+F11+F12+F14",
+        "venue": "AB-519",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22",
+      "C11+C12+C13+F11+F12+F14"
+    ],
+    "venues": [
+      "AB-519"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "POOJA",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A11+A12",
+        "venue": "AB-420",
+        "availableSeats": 64
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-530",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A11+A12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-420",
+      "AB-530"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "PRIYANKA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-518",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-518"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "R. SENTHILKUMAR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB02-220",
+        "availableSeats": 72
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB02-220"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "RAJAT PARKASH",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A24+F22",
+        "venue": "AB-420",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "C11+C12",
+        "venue": "AB-024",
+        "availableSeats": 69
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "D21+D22",
+        "venue": "AB-531",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "A24+F22",
+      "C11+C12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-420",
+      "AB-024",
+      "AB-531"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "RANJITHA",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-420",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-420"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "S.ANANTHAKUMARAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-023",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-023"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SALMAN ZAHEER",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A11+A12+A13+A14+D11+D12",
+        "venue": "AB-415",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A11+A12+A13+A14+D11+D12"
+    ],
+    "venues": [
+      "AB-415"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SAMIKHYA DASH",
+    "courses": [
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A13+A14",
+        "venue": "AB-025",
+        "availableSeats": 61
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "A21+A22",
+        "venue": "AB-531",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "B14+F14",
+        "venue": "AB-531",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D11+D12",
+        "venue": "AB-417",
+        "availableSeats": 70
+      },
+      {
+        "courseCode": "ENG1004",
+        "courseName": "Effective Technical Communication",
+        "slot": "D21+D22",
+        "venue": "AB-415",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A13+A14",
+      "A21+A22",
+      "B14+F14",
+      "D11+D12",
+      "D21+D22"
+    ],
+    "venues": [
+      "AB-025",
+      "AB-531",
+      "AB-417",
+      "AB-415"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SARAVANAN",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-204",
+        "availableSeats": 71
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-204"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SARAVANAN L",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A23+B14",
+        "venue": "AB-520",
+        "availableSeats": 67
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B24+F21",
+        "venue": "AB-420",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "F11+F12",
+        "venue": "AB-024",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A23+B14",
+      "B24+F21",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB-520",
+      "AB-420",
+      "AB-024"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SHAKILA C.V",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-503",
+        "availableSeats": 66
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-503"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SUPRIYA KUMAR PAUL",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-507",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-507"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "SURENDER KUMAR",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-513",
+        "availableSeats": 69
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-513"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "T. VENKATESWARA RAO",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-220",
+        "availableSeats": 74
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-220"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "TRAPTI SHARMA",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-205",
+        "availableSeats": 58
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-205"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VAISHNAVI S",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB02-222",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB02-222"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VENKAT PRASAD PADHY",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B14+D21+D22",
+        "venue": "AB-025",
+        "availableSeats": 65
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B14+D21+D22"
+    ],
+    "venues": [
+      "AB-025"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VENKATESAN K",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "A21+A22",
+        "venue": "AB-519",
+        "availableSeats": 68
+      },
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "B24+F21",
+        "venue": "AB-419",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A21+A22",
+      "B24+F21"
+    ],
+    "venues": [
+      "AB-519",
+      "AB-419"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VICTOR A",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB-515",
+        "availableSeats": 64
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB-515"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VIKAS PANTHI",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "A21+A22+A23+B12+D21+D22",
+        "venue": "AB02-223",
+        "availableSeats": 70
+      }
+    ],
+    "slots": [
+      "A21+A22+A23+B12+D21+D22"
+    ],
+    "venues": [
+      "AB02-223"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "VINESH KUMAR",
+    "courses": [
+      {
+        "courseCode": "CSE1021",
+        "courseName": "Intro to Problem Solving & Programming",
+        "slot": "B21+B22+B23+E14+E21+E22",
+        "venue": "AB02-205",
+        "availableSeats": 67
+      }
+    ],
+    "slots": [
+      "B21+B22+B23+E14+E21+E22"
+    ],
+    "venues": [
+      "AB02-205"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "XAVIER SURESH",
+    "courses": [
+      {
+        "courseCode": "CHY1006",
+        "courseName": "Environmental Sustainability",
+        "slot": "E11+E12",
+        "venue": "AB-531",
+        "availableSeats": 68
+      }
+    ],
+    "slots": [
+      "E11+E12"
+    ],
+    "venues": [
+      "AB-531"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  },
+  {
+    "name": "YOGESH",
+    "courses": [
+      {
+        "courseCode": "MAT1003",
+        "courseName": "Introduction to Calculus (Core)",
+        "slot": "B11+B12+B13+C14+E11+E12",
+        "venue": "AB-023",
+        "availableSeats": 60
+      }
+    ],
+    "slots": [
+      "B11+B12+B13+C14+E11+E12"
+    ],
+    "venues": [
+      "AB-023"
+    ],
+    "rating": -1.0,
+    "reviews": {}
+  }
+]
