@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TeacherData } from './TeacherCard';
 import { SelectedCourseEntry, SUBJECT_COLORS } from '../utils/timetableData';
-import { Sparkles, Check, Clock, Utensils, Award, AlertCircle } from 'lucide-react';
+import { Sparkles, Check, Clock, Utensils, Award, AlertCircle, Building2 } from 'lucide-react';
 
 interface AIScheduleFormProps {
   allFacultyData: TeacherData[];
@@ -31,6 +31,7 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
   const [selectedCourseCodes, setSelectedCourseCodes] = useState<string[]>([]);
   const [timePreference, setTimePreference] = useState<'morning' | 'evening' | 'balanced'>('balanced');
   const [prioritizeHighRating, setPrioritizeHighRating] = useState(true);
+  const [prioritizeSameBlock, setPrioritizeSameBlock] = useState(true);
   const [mealBreaks, setMealBreaks] = useState({
     breakfast: true,
     lunch: true,
@@ -87,6 +88,7 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
           selectedCourses: payloadCourses,
           timePreference,
           prioritizeHighRating,
+          prioritizeSameBlock,
           mealBreaks
         })
       });
@@ -230,21 +232,42 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
         </div>
       </div>
 
-      {/* 4. Faculty Priority */}
-      <div className="flex items-center justify-between bg-slate-100/70 border border-slate-200 p-3.5 rounded-xl">
-        <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
-          <Award className="w-4 h-4 text-purple-600" />
-          <span>Prioritize Highest Rated Faculties</span>
+      {/* 4. Faculty Priority & Building Distance Protection */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="flex items-center justify-between bg-slate-100/70 border border-slate-200 p-3.5 rounded-xl">
+          <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+            <Award className="w-4 h-4 text-purple-600 shrink-0" />
+            <span>Prioritize Highest Rated Faculties</span>
+          </div>
+          <label className="relative inline-flex items-center cursor-pointer shrink-0">
+            <input
+              type="checkbox"
+              checked={prioritizeHighRating}
+              onChange={e => setPrioritizeHighRating(e.target.checked)}
+              className="sr-only peer"
+            />
+            <div className="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600"></div>
+          </label>
         </div>
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input
-            type="checkbox"
-            checked={prioritizeHighRating}
-            onChange={e => setPrioritizeHighRating(e.target.checked)}
-            className="sr-only peer"
-          />
-          <div className="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-indigo-600"></div>
-        </label>
+
+        <div className="flex items-center justify-between bg-slate-100/70 border border-slate-200 p-3.5 rounded-xl">
+          <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+            <Building2 className="w-4 h-4 text-emerald-600 shrink-0" />
+            <div>
+              <div>Prioritize Same Block / Building</div>
+              <div className="text-[10px] text-slate-500 font-medium">Avoid AB-1 ↔ AB-2 10-min sprint</div>
+            </div>
+          </div>
+          <label className="relative inline-flex items-center cursor-pointer shrink-0">
+            <input
+              type="checkbox"
+              checked={prioritizeSameBlock}
+              onChange={e => setPrioritizeSameBlock(e.target.checked)}
+              className="sr-only peer"
+            />
+            <div className="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-600"></div>
+          </label>
+        </div>
       </div>
 
       {/* Submit Button */}

@@ -37,6 +37,20 @@ function getSlotTimeStats(slotStr: string) {
   return { morningCount, eveningCount };
 }
 
+// Helper to extract building block from venue string
+function getBuildingBlock(venue: string): string {
+  if (!venue) return "UNKNOWN";
+  const match = venue.match(/(AB-?\d|LC|MB|CB)/i);
+  if (match) {
+    let block = match[0].toUpperCase();
+    if (block.startsWith("AB") && !block.includes("-")) {
+      block = block.replace("AB", "AB-");
+    }
+    return block;
+  }
+  return "AB-1";
+}
+
 export async function POST(req: NextRequest) {
   try {
     // 1. Check Rate Limiting Guardrail
@@ -49,7 +63,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { selectedCourses, timePreference, prioritizeHighRating, mealBreaks } = body;
+    const { selectedCourses, timePreference, prioritizeHighRating, prioritizeSameBlock, mealBreaks } = body;
 
     const apiKey = (process.env.GEMINI_API_KEY || '').trim();
     if (!apiKey) {
@@ -59,9 +73,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Pre-process and sort options based on timePreference and teacher rating
+    // 2. Pre-process options with Building Block tags and sorting
     const preProcessedCourses = selectedCourses.map((c: any) => {
-      const sortedOptions = [...c.availableOptions].sort((a: any, b: any) => {
+      const optionsWithBlocks = c.availableOptions.map((opt: any) => ({
+        ...opt,
+        buildingBlock: getBuildingBlock(opt.venue)
+      }));
+
+      const sortedOptions = [...optionsWithBlocks].sort((a: any, b: any) => {
         const statsA = getSlotTimeStats(a.slot);
         const statsB = getSlotTimeStats(b.slot);
 
@@ -94,10 +113,16 @@ export async function POST(req: NextRequest) {
 You are an expert academic schedule optimizer for VIT Bhopal FFCS (Fully Flexible Credit System).
 Your task is to select one faculty/slot option for each of the requested courses to build a 100% clash-free timetable.
 
-CRITICAL TIMING & FACULTY SELECTION INSTRUCTIONS:
-- User Time Preference is STRICTLY: "${timePreference.toUpperCase()}".
-  - If MORNING: You MUST pick options whose slots fall in morning periods (08:30 - 13:10, slots ending in 11, 12, 13 like A11, B11, C11, D11, E11, F11). DO NOT pick evening slots (P4, P5, P6, P7) unless NO morning option exists.
-  - If EVENING: You MUST pick options whose slots fall in evening periods (13:15 - 19:30).
+CRITICAL TIMING & BUILDING DISTANCE PROTECTION:
+- USER TIME PREFERENCE: "${timePreference.toUpperCase()}".
+  - If MORNING: Pick options whose slots fall in morning periods (08:30 - 13:10, slots ending in 11, 12, 13 like A11, B11, C11, D11, E11, F11). DO NOT pick evening slots (P4, P5, P6, P7) unless NO morning option exists.
+  - If EVENING: Pick options whose slots fall in evening periods (13:15 - 19:30).
+
+- PRIORITIZE SAME BUILDING / ACADEMIC BLOCK: ${prioritizeSameBlock ? 'ENABLED (CRITICAL PROTECTION)' : 'DISABLED'}.
+  - Note: The distance between AB-1 and AB-2 (or AB-3 / AB-4 / LC) takes 10+ minutes to walk, but class breaks are only 5 minutes.
+  - When ENABLED: You MUST prioritize choosing faculty options located in the SAME Academic Block (e.g. all in AB-1, or all in AB-2).
+  - DO NOT schedule back-to-back periods (e.g. Period 1 into Period 2) in DIFFERENT building blocks (e.g. AB-1 into AB-2). Avoid 10-minute sprint clashes!
+
 - SPECIAL RULE FOR MAT1031 (Calculus BHI): Always pick DHARMALINGAM M (Morning Slot: B11+B12+B13+C14+E11+E12) over DONDU HARISH BABU.
 - FACULTY RATING PRIORITY: ${prioritizeHighRating ? 'Maximum priority to higher rated faculties.' : 'Standard consideration'}.
 
@@ -108,7 +133,7 @@ RULES & CONSTRAINTS:
    - Lunch: 12:00 - 2:30 PM (Avoid 11:40 - 13:10 or 13:15 - 14:45 if lunch requested)
    - Snacks: 5:00 - 6:30 PM (Avoid 16:25 - 17:55 if snacks requested)
 
-PRE-SORTED AVAILABLE COURSE OPTIONS (OPTIMIZED FOR ${timePreference.toUpperCase()} & RATING):
+PRE-SORTED AVAILABLE COURSE OPTIONS WITH BUILDING BLOCKS:
 ${JSON.stringify(preProcessedCourses, null, 2)}
 
 OUTPUT FORMAT:
@@ -121,7 +146,7 @@ Return strictly a raw JSON array of objects representing the chosen schedule opt
     "rating": 5.0,
     "slot": "B11+B12",
     "venue": "AB-430",
-    "reason": "Morning slot (08:30), top rated faculty"
+    "reason": "Same building block (AB-4), top rated faculty"
   }
 ]
 
