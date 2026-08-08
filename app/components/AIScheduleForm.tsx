@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { TeacherData } from './TeacherCard';
 import { SelectedCourseEntry, SUBJECT_COLORS } from '../utils/timetableData';
-import { Sparkles, Check, Clock, Utensils, Award, AlertCircle, Building2 } from 'lucide-react';
+import { Sparkles, Check, Clock, Utensils, Award, AlertCircle, Building2, RefreshCw } from 'lucide-react';
 
 interface AIScheduleFormProps {
   allFacultyData: TeacherData[];
@@ -41,6 +41,14 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(0);
+  const [retryCountdown, setRetryCountdown] = useState(0);
+  const [retryAttempt, setRetryAttempt] = useState(0);
+  const abortRef = useRef(false);
+
+  // Cleanup abort flag on unmount
+  useEffect(() => {
+    return () => { abortRef.current = true; };
+  }, []);
 
   const handleToggleCourse = (code: string) => {
     if (selectedCourseCodes.includes(code)) {
@@ -54,17 +62,60 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
     }
   };
 
+  const makeRequest = async (payloadCourses: any[]): Promise<boolean> => {
+    const res = await fetch('/api/generate-schedule', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        selectedCourses: payloadCourses,
+        timePreference,
+        prioritizeHighRating,
+        prioritizeSameBlock,
+        mealBreaks
+      })
+    });
+
+    const contentType = res.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      await res.text();
+      throw new Error(`Server Error (${res.status}). Unexpected server response.`);
+    }
+
+    const json = await res.json();
+
+    // If server says "retry later" (503 with retryAfterMs), wait and retry automatically
+    if (res.status === 503 && json.retryAfterMs) {
+      return false; // Signal: need to retry
+    }
+
+    if (!res.ok) {
+      throw new Error(json.error || "Failed to generate schedule.");
+    }
+
+    if (!json.schedule || !Array.isArray(json.schedule)) {
+      throw new Error("Invalid response format from AI.");
+    }
+
+    const colorAssignedSchedule: SelectedCourseEntry[] = json.schedule.map((item: any, idx: number) => ({
+      ...item,
+      color: SUBJECT_COLORS[idx % SUBJECT_COLORS.length]
+    }));
+
+    onScheduleGenerated(colorAssignedSchedule);
+    return true; // Success!
+  };
+
   const handleGenerate = async () => {
     if (selectedCourseCodes.length === 0) {
       setError("Please select at least 1 course.");
       return;
     }
 
-    // Instantly reset schedule state when user clicks Regenerate
     onScheduleGenerated([]);
-
     setLoading(true);
     setError(null);
+    setRetryAttempt(0);
+    abortRef.current = false;
 
     const payloadCourses = selectedCourseCodes.map(code => {
       const info = courseMap[code];
@@ -83,60 +134,52 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
       };
     });
 
+    const MAX_AUTO_RETRIES = 4;
+
     try {
-      const res = await fetch('/api/generate-schedule', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          selectedCourses: payloadCourses,
-          timePreference,
-          prioritizeHighRating,
-          prioritizeSameBlock,
-          mealBreaks
-        })
-      });
+      for (let attempt = 0; attempt <= MAX_AUTO_RETRIES; attempt++) {
+        if (abortRef.current) break;
 
-      let json: any;
-      const contentType = res.headers.get('content-type') || '';
-      if (contentType.includes('application/json')) {
-        json = await res.json();
-      } else {
-        const errHtml = await res.text();
-        console.error("Non-JSON Server response:", errHtml);
-        throw new Error(`Server Error (${res.status}). Google Gemini API or server returned an unexpected error page.`);
-      }
+        setRetryAttempt(attempt);
+        const success = await makeRequest(payloadCourses);
 
-      if (!res.ok) {
-        throw new Error(json.error || "Failed to generate schedule.");
-      }
+        if (success) {
+          // Schedule generated successfully!
+          setCooldown(15);
+          const timer = setInterval(() => {
+            setCooldown(prev => {
+              if (prev <= 1) { clearInterval(timer); return 0; }
+              return prev - 1;
+            });
+          }, 1000);
+          return;
+        }
 
-      if (!json.schedule || !Array.isArray(json.schedule)) {
-        throw new Error("Invalid response format from AI.");
-      }
-
-      const colorAssignedSchedule: SelectedCourseEntry[] = json.schedule.map((item: any, idx: number) => ({
-        ...item,
-        color: SUBJECT_COLORS[idx % SUBJECT_COLORS.length]
-      }));
-
-      onScheduleGenerated(colorAssignedSchedule);
-
-      setCooldown(30);
-      const timer = setInterval(() => {
-        setCooldown(prev => {
-          if (prev <= 1) {
-            clearInterval(timer);
-            return 0;
+        // All API keys rate-limited — auto-wait with visible countdown
+        if (attempt < MAX_AUTO_RETRIES) {
+          const waitSecs = 22;
+          setError(`⏳ All API keys are rate-limited. Auto-retrying in ${waitSecs}s... (Attempt ${attempt + 1}/${MAX_AUTO_RETRIES})`);
+          
+          for (let s = waitSecs; s > 0; s--) {
+            if (abortRef.current) return;
+            setRetryCountdown(s);
+            await new Promise(r => setTimeout(r, 1000));
           }
-          return prev - 1;
-        });
-      }, 1000);
+          setRetryCountdown(0);
+          setError(null);
+        }
+      }
+
+      // All retries exhausted
+      setError("All API keys quota exhausted after multiple retries. Please wait 1-2 minutes and try again.");
 
     } catch (err: any) {
       console.error(err);
       setError(err.message || "An error occurred while generating the schedule.");
     } finally {
       setLoading(false);
+      setRetryCountdown(0);
+      setRetryAttempt(0);
     }
   };
 
@@ -153,8 +196,16 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
       </div>
 
       {error && (
-        <div className="bg-red-50 border border-red-200 text-red-700 p-3.5 rounded-xl text-xs font-semibold flex items-center gap-2">
-          <AlertCircle className="w-4 h-4 shrink-0 text-red-600" />
+        <div className={`p-3.5 rounded-xl text-xs font-semibold flex items-center gap-2 ${
+          retryCountdown > 0
+            ? 'bg-amber-50 border border-amber-200 text-amber-700'
+            : 'bg-red-50 border border-red-200 text-red-700'
+        }`}>
+          {retryCountdown > 0 ? (
+            <RefreshCw className="w-4 h-4 shrink-0 text-amber-600 animate-spin" />
+          ) : (
+            <AlertCircle className="w-4 h-4 shrink-0 text-red-600" />
+          )}
           <span>{error}</span>
         </div>
       )}
@@ -288,12 +339,19 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
         className="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {loading ? (
-          <>
-            <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
-            <span>Gemini AI is crafting your timetable...</span>
-          </>
+          retryCountdown > 0 ? (
+            <>
+              <RefreshCw className="w-4 h-4 animate-spin" />
+              <span>API Quota Reset — Auto-retrying in {retryCountdown}s (Attempt {retryAttempt + 1}/4)</span>
+            </>
+          ) : (
+            <>
+              <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
+              <span>Gemini AI is crafting your timetable...</span>
+            </>
+          )
         ) : cooldown > 0 ? (
-          <span>Rate Limit Cooldown ({cooldown}s)</span>
+          <span>Cooldown ({cooldown}s)</span>
         ) : (
           <>
             <Sparkles className="w-4 h-4" /> Generate AI Schedule with Gemini

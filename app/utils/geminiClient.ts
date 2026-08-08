@@ -1,6 +1,7 @@
 /**
  * Multi-Key Round-Robin Client for Google Gemini API.
- * Uses STRICTLY `gemini-flash-latest` model endpoint as requested by user.
+ * Uses STRICTLY `gemini-flash-latest` model endpoint.
+ * Returns retryAfterMs when all keys are rate-limited so the caller can retry.
  */
 
 let keyIndex = 0;
@@ -30,18 +31,21 @@ export function getGeminiApiKeys(): string[] {
   return keys;
 }
 
-export async function callGeminiWithRotation(prompt: string): Promise<{ text: string; keyUsedIndex: number; totalKeys: number }> {
+export type GeminiResult =
+  | { ok: true; text: string; keyUsedIndex: number; totalKeys: number }
+  | { ok: false; retryAfterMs: number; error: string; totalKeys: number };
+
+export async function callGeminiWithRotation(prompt: string): Promise<GeminiResult> {
   const keys = getGeminiApiKeys();
 
   if (keys.length === 0) {
-    throw new Error('Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.');
+    return { ok: false, retryAfterMs: 0, error: 'Gemini API Key is missing. Please add GEMINI_API_KEY in your deployment settings.', totalKeys: 0 };
   }
 
-  // STRICT SINGLE MODEL CHOICE AS INSTRUCTED BY USER: gemini-flash-latest ONLY
   const MODEL = 'gemini-flash-latest';
-  let lastError = '';
+  let maxRetryDelay = 0;
 
-  // Rotate through keys starting from current pointer
+  // Rotate through all keys starting from current pointer
   for (let attempt = 0; attempt < keys.length; attempt++) {
     const currentKeyIndex = (keyIndex + attempt) % keys.length;
     const apiKey = keys[currentKeyIndex];
@@ -66,7 +70,7 @@ export async function callGeminiWithRotation(prompt: string): Promise<{ text: st
         const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
         if (rawText) {
           keyIndex = (currentKeyIndex + 1) % keys.length;
-          return { text: rawText, keyUsedIndex: currentKeyIndex, totalKeys: keys.length };
+          return { ok: true, text: rawText, keyUsedIndex: currentKeyIndex, totalKeys: keys.length };
         }
       }
 
@@ -74,15 +78,27 @@ export async function callGeminiWithRotation(prompt: string): Promise<{ text: st
       console.warn(`Gemini Key #${currentKeyIndex + 1}/${keys.length} (${MODEL}) status ${response.status}: ${errText.substring(0, 150)}`);
 
       if (response.status === 429) {
-        lastError = `Rate limit (429) reached on API Key #${currentKeyIndex + 1}`;
-      } else {
-        lastError = `Gemini API Error (${response.status}) on Key #${currentKeyIndex + 1}: ${errText.substring(0, 150)}`;
+        // Extract retryDelay from Google's error response
+        try {
+          const errJson = JSON.parse(errText);
+          const retryInfo = errJson?.error?.details?.find((d: any) => d['@type']?.endsWith('RetryInfo'));
+          if (retryInfo?.retryDelay) {
+            const secs = parseFloat(retryInfo.retryDelay.replace('s', ''));
+            if (secs > maxRetryDelay) maxRetryDelay = secs;
+          }
+        } catch { /* ignore parse errors */ }
       }
     } catch (err: any) {
       console.error(`Fetch error on Key #${currentKeyIndex + 1}:`, err);
-      lastError = err.message || 'Fetch error';
     }
   }
 
-  throw new Error(`Google Gemini API Rate Limit / Quota reached across all ${keys.length} key(s) on ${MODEL}. Please wait 15 seconds or add more keys to GEMINI_API_KEYS.`);
+  // All keys exhausted — return retry signal instead of throwing
+  const retryMs = maxRetryDelay > 0 ? Math.ceil(maxRetryDelay * 1000) + 1000 : 22000;
+  return {
+    ok: false,
+    retryAfterMs: retryMs,
+    error: `All ${keys.length} API key(s) hit rate limit. Auto-retrying in ${Math.ceil(retryMs / 1000)}s...`,
+    totalKeys: keys.length
+  };
 }
