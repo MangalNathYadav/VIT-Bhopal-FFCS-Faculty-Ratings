@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { callGeminiWithRotation } from '../../utils/geminiClient';
 
 // Simple In-Memory Rate Limiter (Sliding Window per IP)
 const rateLimitMap = new Map<string, number[]>();
@@ -31,14 +32,6 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json();
     const { currentSchedule, refinementPrompt, allFacultyData } = body;
-
-    const apiKey = (process.env.GEMINI_API_KEY || '').trim();
-    if (!apiKey) {
-      return NextResponse.json(
-        { error: 'Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.' },
-        { status: 500 }
-      );
-    }
 
     // Build Gemini Prompt for Refinement
     const prompt = `
@@ -76,41 +69,8 @@ Return strictly a raw JSON array of objects representing the updated clash-free 
 Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 `;
 
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-goog-api-key': apiKey,
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [{ text: prompt }]
-            }
-          ]
-        })
-      }
-    );
-
-    if (!response.ok) {
-      const errText = await response.text();
-      console.error("Gemini API Error Response:", errText);
-      if (response.status === 429) {
-        return NextResponse.json(
-          { error: 'Google Gemini API Rate Limit / Quota Exceeded (HTTP 429). The free Gemini API key limit was reached. Please wait 20-30 seconds and try again.' },
-          { status: 429 }
-        );
-      }
-      return NextResponse.json(
-        { error: `Gemini API returned error (${response.status}): ${errText.substring(0, 150)}` },
-        { status: response.status }
-      );
-    }
-
-    const data = await response.json();
-    const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    // Call Gemini with Multi-Key Rotation and Auto-Fallback
+    const { text: rawText } = await callGeminiWithRotation(prompt);
 
     // Robust JSON Array extraction using Regex
     const jsonMatch = rawText.match(/\[[\s\S]*\]/);
