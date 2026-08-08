@@ -1,6 +1,7 @@
 /**
- * Multi-Key Round-Robin & Auto-Fallback Client for Google Gemini API.
- * Automatically rotates between multiple API keys and falls back if any key hits HTTP 429 (Rate Limit).
+ * Multi-Key Round-Robin & Auto-Retry Fallback Client for Google Gemini API.
+ * Automatically rotates between multiple API keys, tries alternate models,
+ * and continuously auto-retries with exponential backoff on HTTP 429 rate limits until a schedule is generated!
  */
 
 let keyIndex = 0;
@@ -30,6 +31,8 @@ export function getGeminiApiKeys(): string[] {
   return keys;
 }
 
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 export async function callGeminiWithRotation(prompt: string): Promise<{ text: string; keyUsedIndex: number; totalKeys: number }> {
   const keys = getGeminiApiKeys();
 
@@ -37,57 +40,68 @@ export async function callGeminiWithRotation(prompt: string): Promise<{ text: st
     throw new Error('Gemini API Key is missing in environment variables. Please add GEMINI_API_KEY in your deployment settings.');
   }
 
-  const models = ['gemini-flash-latest', 'gemini-1.5-flash', 'gemini-2.0-flash-exp'];
+  // Official high-performance Gemini models
+  const models = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-flash-latest', 'gemini-1.5-pro'];
+  const MAX_RETRY_CYCLES = 5;
   let lastError = '';
 
-  // Try up to keys.length attempts, rotating keys on 429 / rate limits
-  for (let attempt = 0; attempt < keys.length; attempt++) {
-    const currentKeyIndex = (keyIndex + attempt) % keys.length;
-    const apiKey = keys[currentKeyIndex];
+  for (let cycle = 1; cycle <= MAX_RETRY_CYCLES; cycle++) {
+    // Try each key in the pool starting from the current keyIndex pointer
+    for (let attempt = 0; attempt < keys.length; attempt++) {
+      const currentKeyIndex = (keyIndex + attempt) % keys.length;
+      const apiKey = keys[currentKeyIndex];
 
-    for (const model of models) {
-      try {
-        const response = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-goog-api-key': apiKey,
-            },
-            body: JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }]
-            })
+      for (const model of models) {
+        try {
+          const response = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-goog-api-key': apiKey,
+              },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }]
+              })
+            }
+          );
+
+          if (response.ok) {
+            const data = await response.json();
+            const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
+            if (rawText) {
+              // Advance pointer for next call
+              keyIndex = (currentKeyIndex + 1) % keys.length;
+              return { text: rawText, keyUsedIndex: currentKeyIndex, totalKeys: keys.length };
+            }
           }
-        );
 
-        if (response.ok) {
-          const data = await response.json();
-          const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || '';
-          if (rawText) {
-            // Update global pointer for round-robin
-            keyIndex = (currentKeyIndex + 1) % keys.length;
-            return { text: rawText, keyUsedIndex: currentKeyIndex, totalKeys: keys.length };
+          const errText = await response.text();
+          console.warn(`[Cycle ${cycle}/${MAX_RETRY_CYCLES}] Gemini Key #${currentKeyIndex + 1}/${keys.length} (${model}) status ${response.status}: ${errText.substring(0, 100)}`);
+
+          if (response.status === 429 || response.status === 403) {
+            lastError = `Rate limit reached on key #${currentKeyIndex + 1} (${model})`;
+            // Break model loop to try next key in pool immediately
+            break;
+          } else {
+            lastError = `Gemini API status ${response.status}: ${errText.substring(0, 100)}`;
           }
+        } catch (err: any) {
+          console.error(`Fetch error on key #${currentKeyIndex + 1} (${model}):`, err);
+          lastError = err.message || 'Network fetch error';
         }
-
-        const errText = await response.text();
-        console.warn(`Gemini Key #${currentKeyIndex + 1}/${keys.length} (${model}) status ${response.status}: ${errText.substring(0, 100)}`);
-
-        if (response.status === 429 || response.status === 403) {
-          lastError = `Rate limit / quota reached on key #${currentKeyIndex + 1}`;
-          // Break model loop to switch to next key in pool!
-          break;
-        } else {
-          lastError = `Gemini API status ${response.status}: ${errText.substring(0, 100)}`;
-        }
-      } catch (err: any) {
-        console.error(`Gemini fetch error on key #${currentKeyIndex + 1}:`, err);
-        lastError = err.message || 'Fetch error';
       }
+    }
+
+    // If all keys hit rate limits in this cycle, wait briefly before auto-retrying cycle
+    if (cycle < MAX_RETRY_CYCLES) {
+      const backoffMs = cycle * 2000; // 2s, 4s, 6s...
+      console.log(`All ${keys.length} key(s) busy/rate-limited. Auto-retrying in ${backoffMs / 1000}s (Cycle ${cycle}/${MAX_RETRY_CYCLES})...`);
+      await sleep(backoffMs);
     }
   }
 
-  // If all keys in pool failed
-  throw new Error(`All ${keys.length} Gemini API Key(s) in pool hit rate limit / quota. Please wait 20 seconds or add more keys to GEMINI_API_KEYS.`);
+  // If all retry cycles completed without success
+  throw new Error(`Google Gemini API Rate Limit / Quota reached across all ${keys.length} key(s) after ${MAX_RETRY_CYCLES} auto-retry attempts. Please wait 15 seconds and try again, or add additional keys to GEMINI_API_KEYS.`);
 }

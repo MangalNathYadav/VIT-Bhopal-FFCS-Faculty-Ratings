@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiWithRotation } from '../../utils/geminiClient';
 
+export const maxDuration = 45; // Allow up to 45 seconds for auto-retry backoff cycles
+
 // Simple In-Memory Rate Limiter (Sliding Window per IP)
 const rateLimitMap = new Map<string, number[]>();
 const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minute
@@ -146,7 +148,7 @@ Return strictly a raw JSON array of objects representing the chosen schedule opt
 Respond ONLY with valid JSON. Do not include markdown codeblocks or extra text.
 `;
 
-    // 4. Call Gemini with Multi-Key Rotation and Auto-Fallback
+    // 4. Call Gemini with Multi-Key Rotation and Auto-Retry Fallback
     const { text: rawText } = await callGeminiWithRotation(prompt);
 
     // Robust JSON Array extraction using Regex
