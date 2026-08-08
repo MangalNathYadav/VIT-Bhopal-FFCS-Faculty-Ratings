@@ -31,7 +31,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-416",
         "availableSeats": 44
@@ -85,7 +85,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-513",
         "availableSeats": 45
@@ -382,7 +382,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-431",
         "availableSeats": 67
@@ -436,7 +436,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-420",
         "availableSeats": 64
@@ -508,7 +508,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-513",
         "availableSeats": 0
@@ -598,7 +598,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-502",
         "availableSeats": 65
@@ -697,7 +697,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-517",
         "availableSeats": 68
@@ -751,7 +751,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-501",
         "availableSeats": 65
@@ -823,7 +823,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-429",
         "availableSeats": 69
@@ -913,7 +913,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-518",
         "availableSeats": 62
@@ -940,7 +940,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-518",
         "availableSeats": 70
@@ -1030,7 +1030,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-519",
         "availableSeats": 38
@@ -1279,7 +1279,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-507",
         "availableSeats": 68
@@ -1368,7 +1368,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-431",
         "availableSeats": 66
@@ -1422,7 +1422,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-502",
         "availableSeats": 70
@@ -1557,7 +1557,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-502",
         "availableSeats": 63
@@ -1771,7 +1771,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-507",
         "availableSeats": 68
@@ -1933,7 +1933,7 @@
     "courses": [
       {
         "courseCode": "MAT1031",
-        "courseName": "Introduction to Calculus (BHI)",
+        "courseName": "Calculus (BHI)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-429",
         "availableSeats": null
@@ -1987,7 +1987,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-416",
         "availableSeats": 67
@@ -2014,7 +2014,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-431",
         "availableSeats": 57
@@ -2068,7 +2068,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-419",
         "availableSeats": 61
@@ -2201,7 +2201,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-507",
         "availableSeats": 66
@@ -2399,7 +2399,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-431",
         "availableSeats": 70
@@ -2542,7 +2542,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-501",
         "availableSeats": 70
@@ -2596,7 +2596,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-502",
         "availableSeats": 66
@@ -2623,7 +2623,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-023",
         "availableSeats": 67
@@ -2650,7 +2650,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-529",
         "availableSeats": 69
@@ -2677,7 +2677,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-420",
         "availableSeats": 67
@@ -2724,7 +2724,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-513",
         "availableSeats": 66
@@ -2764,7 +2764,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-416",
         "availableSeats": 70
@@ -2784,7 +2784,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-514",
         "availableSeats": 69
@@ -2804,7 +2804,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-513",
         "availableSeats": 63
@@ -2893,7 +2893,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-419",
         "availableSeats": 69
@@ -2988,7 +2988,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-518",
         "availableSeats": 70
@@ -3008,7 +3008,7 @@
     "courses": [
       {
         "courseCode": "MAT1031",
-        "courseName": "Introduction to Calculus (BHI)",
+        "courseName": "Calculus (BHI)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-514",
         "availableSeats": null
@@ -3028,7 +3028,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-519",
         "availableSeats": 68
@@ -3210,7 +3210,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-430",
         "availableSeats": 69
@@ -3230,7 +3230,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-503",
         "availableSeats": 67
@@ -3327,7 +3327,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-413",
         "availableSeats": 69
@@ -3492,7 +3492,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-514",
         "availableSeats": 70
@@ -3541,14 +3541,14 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-517",
         "availableSeats": 70
       },
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-430",
         "availableSeats": 70
@@ -3570,14 +3570,14 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-519",
         "availableSeats": 70
       },
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "C11+C12+C13+F11+F12+F14",
         "venue": "AB-519",
         "availableSeats": 70
@@ -3627,7 +3627,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-518",
         "availableSeats": 70
@@ -3705,7 +3705,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-420",
         "availableSeats": 66
@@ -3745,7 +3745,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A11+A12+A13+A14+D11+D12",
         "venue": "AB-415",
         "availableSeats": 69
@@ -3878,7 +3878,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-503",
         "availableSeats": 66
@@ -3898,7 +3898,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-507",
         "availableSeats": 69
@@ -3918,7 +3918,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "A21+A22+A23+B14+D21+D22",
         "venue": "AB-513",
         "availableSeats": 69
@@ -4047,7 +4047,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B21+B22+B23+E14+E21+E22",
         "venue": "AB-515",
         "availableSeats": 64
@@ -4127,7 +4127,7 @@
     "courses": [
       {
         "courseCode": "MAT1003",
-        "courseName": "Introduction to Calculus (Core)",
+        "courseName": "Calculus (Core)",
         "slot": "B11+B12+B13+C14+E11+E12",
         "venue": "AB-023",
         "availableSeats": 60
