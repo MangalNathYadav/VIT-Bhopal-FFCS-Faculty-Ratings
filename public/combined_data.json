@@ -2377,10 +2377,18 @@
         "slot": "B11+B12+B13",
         "venue": "AB02-324",
         "availableSeats": 60
+      },
+      {
+        "courseCode": "CSD1001",
+        "courseName": "Principles Of Digital Forensics",
+        "slot": "E11+E12",
+        "venue": "AB02-324",
+        "availableSeats": 71
       }
     ],
     "slots": [
-      "B11+B12+B13"
+      "B11+B12+B13",
+      "E11+E12"
     ],
     "venues": [
       "AB02-324"
@@ -6251,15 +6259,42 @@
         "slot": "D11+D12",
         "venue": "AB-420",
         "availableSeats": 67
+      },
+      {
+        "courseCode": "CHY1007",
+        "courseName": "Forensic Chemistry and Applications",
+        "slot": "A11+A12+A13",
+        "venue": "AB02-128-Audi2",
+        "availableSeats": 58
+      },
+      {
+        "courseCode": "CHY1007",
+        "courseName": "Forensic Chemistry and Applications",
+        "slot": "A21+A22+A23",
+        "venue": "CR-010",
+        "availableSeats": 53
+      },
+      {
+        "courseCode": "CHY1007",
+        "courseName": "Forensic Chemistry and Applications",
+        "slot": "C14+E11+E12",
+        "venue": "CR-007",
+        "availableSeats": 61
       }
     ],
     "slots": [
       "A21+A22",
-      "D11+D12"
+      "D11+D12",
+      "A11+A12+A13",
+      "A21+A22+A23",
+      "C14+E11+E12"
     ],
     "venues": [
       "AB-420",
-      "AB-517"
+      "AB-517",
+      "AB02-128-Audi2",
+      "CR-010",
+      "CR-007"
     ],
     "rating": 3.1,
     "reviews": {
@@ -12970,5 +13005,41 @@
     ],
     "rating": -1.0,
     "reviews": {}
+  },
+  {
+    "name": "AANJAN KUMAR",
+    "courses": [
+      {
+        "courseCode": "CSD1001",
+        "courseName": "Principles Of Digital Forensics",
+        "slot": "D11+D12",
+        "venue": "AB02-117",
+        "availableSeats": 65
+      },
+      {
+        "courseCode": "CSD1001",
+        "courseName": "Principles Of Digital Forensics",
+        "slot": "F11+F12",
+        "venue": "AB02-217",
+        "availableSeats": 60
+      }
+    ],
+    "slots": [
+      "D11+D12",
+      "F11+F12"
+    ],
+    "venues": [
+      "AB02-117",
+      "AB02-217"
+    ],
+    "rating": 4.25,
+    "reviews": {
+      "Teaching": "3.0",
+      "Evaluation": "4.0",
+      "Behaviour": "5.0",
+      "Internals": "5.0",
+      "Class Average": "Low",
+      "Final Remark": "Highly Recommended\ud83d\udd25"
+    }
   }
 ]
