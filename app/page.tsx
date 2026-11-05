@@ -115,7 +115,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-sm font-semibold text-slate-600 max-w-2xl mx-auto">
-            Faculty ratings, AI-powered schedule generation with Gemini, and interactive clash-free timetable planning.
+            Faculty ratings, AI-powered schedule generation with Gemini, and interactive clash-free timetable planning across all semesters.
           </p>
         </div>
 

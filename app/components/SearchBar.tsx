@@ -7,7 +7,7 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-export default function SearchBar({ searchTerm, setSearchTerm, placeholder = "Search for a faculty or course code..." }: SearchBarProps) {
+export default function SearchBar({ searchTerm, setSearchTerm, placeholder = "Search for a faculty name or course code (e.g. MAT3003, CSE2001, EEE1001, AI)..." }: SearchBarProps) {
   return (
     <div className="relative w-full max-w-2xl mx-auto mb-10 group">
       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none transition-transform duration-300 group-focus-within:scale-110">

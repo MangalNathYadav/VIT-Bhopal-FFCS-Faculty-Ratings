@@ -56,6 +56,14 @@ export const SUBJECT_COLORS = [
   "#ec4899", // Pink
   "#06b6d4", // Cyan
   "#84cc16", // Lime
+  "#6366f1", // Indigo
+  "#14b8a6", // Teal
+  "#f97316", // Orange
+  "#a855f7", // Violet
+  "#0ea5e9", // Sky
+  "#e11d48", // Rose
+  "#d946ef", // Fuchsia
+  "#059669", // Dark Emerald
 ];
 
 export function parseSlots(slotStr: string): string[] {

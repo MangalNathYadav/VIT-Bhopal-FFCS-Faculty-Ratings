@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { TeacherData } from './TeacherCard';
 import { SelectedCourseEntry, SUBJECT_COLORS } from '../utils/timetableData';
-import { Sparkles, Check, Clock, Utensils, Award, AlertCircle, Building2, RefreshCw } from 'lucide-react';
+import { Sparkles, Check, Clock, Utensils, Award, AlertCircle, Building2, RefreshCw, Search, X } from 'lucide-react';
 
 interface AIScheduleFormProps {
   allFacultyData: TeacherData[];
@@ -26,8 +26,9 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
     });
   });
 
-  const availableCourses = Object.values(courseMap);
+  const availableCourses = Object.values(courseMap).sort((a, b) => a.courseCode.localeCompare(b.courseCode));
 
+  const [courseSearch, setCourseSearch] = useState("");
   const [selectedCourseCodes, setSelectedCourseCodes] = useState<string[]>([]);
   const [timePreference, setTimePreference] = useState<'morning' | 'evening' | 'balanced'>('balanced');
   const [prioritizeHighRating, setPrioritizeHighRating] = useState(true);
@@ -54,10 +55,6 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
     if (selectedCourseCodes.includes(code)) {
       setSelectedCourseCodes(selectedCourseCodes.filter(c => c !== code));
     } else {
-      if (selectedCourseCodes.length >= 7) {
-        alert("You can select a maximum of 7 courses at once.");
-        return;
-      }
       setSelectedCourseCodes([...selectedCourseCodes, code]);
     }
   };
@@ -212,11 +209,47 @@ export default function AIScheduleForm({ allFacultyData, onScheduleGenerated }: 
 
       {/* 1. Select Courses */}
       <div>
-        <label className="block text-xs font-bold text-slate-800 mb-2">
-          1. Select Courses ({selectedCourseCodes.length} / 7 selected):
-        </label>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+          <label className="block text-xs font-bold text-slate-800">
+            1. Select Courses ({selectedCourseCodes.length} selected):
+          </label>
+          {selectedCourseCodes.length > 0 && (
+            <button
+              onClick={() => setSelectedCourseCodes([])}
+              className="text-[11px] text-red-600 hover:text-red-700 font-bold flex items-center gap-1 self-start sm:self-auto"
+            >
+              <X className="w-3 h-3" /> Clear Selection
+            </button>
+          )}
+        </div>
+
+        {/* Quick Search for Courses */}
+        <div className="relative mb-2.5">
+          <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
+          <input
+            type="text"
+            placeholder="Search courses by code or title (e.g. CSE2001, MAT, OOP, AI, EEE)..."
+            value={courseSearch}
+            onChange={(e) => setCourseSearch(e.target.value)}
+            className="w-full pl-8 pr-8 py-1.5 text-xs rounded-xl border border-slate-300 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent transition-all"
+          />
+          {courseSearch && (
+            <button
+              onClick={() => setCourseSearch("")}
+              className="absolute right-2.5 top-2 text-slate-400 hover:text-slate-600"
+            >
+              <X className="w-3.5 h-3.5" />
+            </button>
+          )}
+        </div>
+
         <div className="flex flex-wrap gap-2.5 max-h-56 overflow-y-auto p-2.5 bg-slate-100/70 rounded-xl border border-slate-200">
-          {availableCourses.map(course => {
+          {availableCourses
+            .filter(course => 
+              course.courseCode.toLowerCase().includes(courseSearch.toLowerCase()) ||
+              course.courseName.toLowerCase().includes(courseSearch.toLowerCase())
+            )
+            .map(course => {
             const isSelected = selectedCourseCodes.includes(course.courseCode);
             return (
               <button
